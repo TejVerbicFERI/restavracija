@@ -1,0 +1,127 @@
+
+1.GENERIRANJE SLIK
+Model:  Gemini
+
+Logotip (slike/logo.png)
+Poizvedba:
+Make me a minimalist circular logo for an Asian restaurant, featuring a stylized golden lotus flower, deep green and gold colors, cream background, no text.
+Odgovor: generirana slika (slike/logo.png)
+
+Pho (slike/pho.jpg)
+Poizvedba:
+Make me a professional food photo of Vietnamese beef pho in a white ceramic bowl, rice noodles, thin beef slices, fresh herbs, lime wedge and chili on the side, dark wooden table, steam rising.
+Odgovor: generirana slika (slike/pho.jpg)
+
+Pad thai (slike/padthai.jpg)
+Poizvedba:
+Make me a professional food photo of shrimp pad thai on a dark ceramic plate, topped with crushed peanuts, bean sprouts, lime wedge and chives, rustic table, soft side lighting.
+Odgovor: generirana slika (slike/padthai.jpg)
+
+Mochi (slike/mochi.jpg)
+Poizvedba:
+Make me a professional food photo of green tea matcha mochi ice cream, one cut in half showing the filling, on a minimalist slate plate, dusted with matcha powder, soft natural light.
+Odgovor: generirana slika (slike/mochi.jpg)
+
+Notranjost (slike/notranjost.jpg)
+Poizvedba:
+Make ma a Cozy interior of a modern asian restaurant, dark wooden tables, paper lanterns, bamboo decorations, green plants, warm ambient lighting, no people.
+Odgovor: generirana slika (slike/notranjost.jpg)
+
+
+Obdelava slik: pomanjšane in stisnjene pod 500 KB z orodjem https://www.iloveimg.com/resize-image .
+
+2.GENERIRANJE BESEDIL
+Model: ChatGPT 
+Poizvedba:
+Napiši mi besedilo za izmišljeno resatavracijo Zlati Lotos ki streže azijsko hrano, naj bo v dveh odstavkih
+Odgovor: 
+Restavracija Zlati Lotos je nastala iz ljubezni do azijske kulinarike in številnih potovanj po Vietnamu, Tajski in Japonski. Ime nosi po lotosu, simbolu čistosti in novih začetkov, ki ga najdete tudi v našem notranjem vrtu.
+
+Naša kuhinja temelji na svežih sestavinah in pristnih začimbah, ki jih skrbno izbiramo pri lokalnih dobaviteljih in specializiranih uvoznikih. Klasike, kot sta pho in pad thai, pripravljamo po izvirnih receptih, a s prilagojeno stopnjo pekočine za slovenski okus.
+
+
+Poizvedba:
+Napiši mi še nekaj o tej restavraciji na primer nekaj o jedeh ki jih streže to so pho, pad thai in mochi.
+Odgovor: 
+Restavracija Zlati Lotos je nastala iz ljubezni do azijske kulinarike in številnih potovanj po Vietnamu, Tajski in Japonski. Ime nosi po lotosu, simbolu čistosti in novih začetkov, ki ga najdete tudi v našem notranjem vrtu. Naša kuhinja temelji na svežih sestavinah in pristnih začimbah, ki jih skrbno izbiramo pri lokalnih dobaviteljih in specializiranih uvoznikih.
+
+Vsako jed pripravljamo sproti in z veliko pozornosti. Klasike, kot sta pho in pad thai, pripravljamo po izvirnih receptih, a s prilagojeno stopnjo pekočine za slovenski okus. Pri nas boste našli tudi bogato izbiro vegetarijanskih, veganskih in brezglutenskih jedi.
+
+Poizvedba:
+Napiši mi še uvodni odstavek za index za to restavracijo.
+Odgovor: 
+Dobrodošli v restavraciji Zlati Lotos, kjer vas na pot po Aziji popeljemo kar za našo mizo. Kuhamo s svežimi sestavinami, aromatičnimi začimbami in veliko ljubezni do tradicionalnih receptov. Sedite, sprostite se in dovolite, da vas razvajamo.
+
+Poizvedba:
+Sedaj pa si izmisli še jedilnik za to stran tako da mi daš ime jedi njen opis ter alergene in ceno te jedi.
+Odgovor:
+🥢 Predjedi
+1. Pomladni zavitki – 6,50 € Hrustljavi zavitki z zelenjavo in steklenimi rezanci, postreženi s sladko-pekočo omako.
+
+Alergeni: gluten, soja, sezam
+2. Gyoza – 7,90 € Japonski cmoki s svinjskim nadevom, popečeni na ponvi in postreženi s sojino omako.
+
+Alergeni: gluten, soja, sezam
+3. Miso juha – 4,90 € Lahka juha iz fermentirane sojine paste s tofujem, morskimi algami in mladim čebulčkom.
+
+Alergeni: soja
+4. Edamame – 4,50 € Mladi sojini stroki, kuhani na pari in posuti z morsko soljo.
+
+Alergeni: soja
+🍛 Glavne jedi
+1. Pho bo – 12,90 € Tradicionalna vietnamska goveja juha z riževimi rezanci, tankimi rezinami govedine in svežimi zelišči.
+
+Alergeni: soja, ribe
+2. Pad thai s kozicami – 13,50 € Ocvrti riževi rezanci s kozicami, jajcem, kalčki in praženimi arašidi.
+
+Alergeni: raki, jajca, arašidi, soja, ribe
+3. Zeleni tajski curry – 13,90 € Piščanec v kremni kokosovi omaki z baziliko in bambusom, postrežen z jasminovim rižem.
+
+Alergeni: ribe, raki
+4. Teriyaki losos – 16,90 € Losos, pečen na žaru in prelit s teriyaki glazuro, postrežen s sezamom in zelenjavo na pari.
+
+Alergeni: ribe, gluten, soja, sezam
+5. Tofu s sezamom in zelenjavo – 11,90 € Hrustljavi tofu z zelenjavo iz voka in sezamovo omako. Primerna izbira za vegane.
+
+Alergeni: soja, sezam
+🍡 Sladice
+1. Mochi sladoled – 6,50 € Mehki riževi žepki, polnjeni s sladoledom z okusom zelenega čaja matcha.
+
+Alergeni: mleko
+2. Mango z lepljivim rižem – 6,90 € Sladek kokosov riž, postrežen s svežim mangom. Sladica je veganska in brez glutena.
+
+Alergeni: po navedbi brez alergenov
+3. Dorayaki – 5,50 € Tradicionalne japonske palačinke, polnjene s sladko pasto iz rdečega fižola.
+
+Alergeni: gluten, jajca, mleko
+4. Banane v testu – 5,90 € Ocvrte banane v lahkem testu, prelite z medom in posute s sezamom.
+
+Alergeni: gluten, jajca, sezam
+
+Poizvedba:
+Napiši mi za pad thai, pho in mochi recept kej mi napišeš sestavine ter postopek priprave jedi
+Odgovor:
+Pho – vietnamska goveja juha
+
+Pho je tradicionalna vietnamska goveja juha s svežimi zelišči in limeto. Čas priprave je približno 3 ure, recept pa zadostuje za 4 porcije.
+
+Sestavine: 1 kg govejih kosti, 500 g govejega zrezka, 2 litra vode, 1 čebula, 50 g ingverja, 2 zvezdasta janeža, 1 palčka cimeta, 3 žlice ribje omake, 400 g riževih rezancev, 100 g fižolovih kalčkov, 1 limeta in 1 šopek svežih zelišč (bazilika in koriander).
+
+Postopek priprave: Goveje kosti 10 minut prekuhajte v vreli vodi, nato jih odcedite in sperite. Čebulo in ingver prepolovite ter ju na suhi ponvi opecite do rjave barve. Kosti, čebulo, ingver, janež in cimet dajte v lonec z 2 litroma vode. Juho kuhajte na majhnem ognju približno 2 uri in sproti odstranjujte penico. Nato jo precedite in začinite z ribjo omako. Riževe rezance skuhajte po navodilih na embalaži in jih razporedite v sklede. Goveji zrezek narežite na zelo tanke rezine in jih položite na rezance. Prelijte z vrelo juho ter dodajte fižolove kalčke, sveža zelišča in limetin sok.
+
+Pad thai s kozicami
+
+Pad thai s kozicami je priljubljena tajska jed iz riževih rezancev, kozic, jajc, arašidov in limete. Čas priprave je približno 30 minut, recept pa zadostuje za 2 porciji.
+
+Sestavine: 200 g riževih rezancev, 200 g olupljenih kozic, 2 jajci, 100 g fižolovih kalčkov, 2 stroka česna, 3 žlice ribje omake, 2 žlici tamarindove paste, 1 žlica rjavega sladkorja, 2 žlici olja, 50 g praženih arašidov, 1 limeta in 2 stebli mladega česna ali drobnjaka.
+
+Postopek priprave: Riževe rezance namočite v topli vodi za 20 minut in jih odcedite. V skledi zmešajte ribjo omako, tamarindovo pasto in rjavi sladkor. V voku segrejte olje in na hitro prepražite sesekljan česen. Dodajte kozice in jih pecite približno 2 minuti, dokler ne postanejo rožnate. Kozice potisnite na rob voka, na sredini pa pripravite umešano jajce. Dodajte rezance in pripravljeno omako ter vse skupaj mešajte približno 3 minute. Primešajte fižolove kalčke in drobnjak ter jed odstavite z ognja. Postrezite z zdrobljenimi arašidi in rezino limete.
+
+Mochi sladoled z okusom matche
+
+Mochi sladoled je japonska sladica iz mehkega, lepljivega riževega testa, polnjenega s sladoledom z okusom zelenega čaja matche. Čas priprave je približno 1 ura, dodatno pa sta potrebni 2 uri zamrzovanja. Recept zadostuje za 8 porcij.
+
+Sestavine: 100 g lepljive riževe moke, 50 g sladkorja v prahu, 150 ml vode, 2 g matcha čaja v prahu, 30 g koruznega škroba in 400 ml sladoleda iz zelenega čaja.
+
+Postopek priprave: Sladoled oblikujte v majhne kroglice, jih položite na pladenj in zamrznite za 2 uri. V skledi zmešajte riževo moko, sladkor v prahu, matcha čaj in vodo, da dobite gladko testo. Skledo pokrijte in maso segrevajte v mikrovalovni pečici 2 minuti. Nato jo premešajte in segrevajte še 1 minuto, da postane lepljiva. Delovno površino posujte s koruznim škrobom, nanjo stresite testo, ga razvaljajte in razrežite na 8 krogov. V vsak krog zavijte eno kroglico zamrznjenega sladoleda. Pripravljene mochi sladice do serviranja shranite v zamrzovalniku.
+
