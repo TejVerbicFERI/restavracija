@@ -1,20 +1,19 @@
 :root {
-    --barva-primarna: #2b2622;          /* tuš (sumi), temno rjava-črna */
-    --barva-primarna-svetla: #433b34;   /* hover v navigaciji */
-    --barva-poudarek: #c9a227;          /* zlata (kot v logotipu) */
-    --barva-poudarek-temna: #a8841a;    /* hover na zlatih gumbih */
-    --barva-ozadje: #faf5e9;            /* riževi papir (kremna, kot v logotipu) */
-    --barva-povrsina: #ffffff;          /* kartice */
-    --barva-besedilo: #302b27;          /* topla črna */
-    --barva-besedilo-svetlo: #faf5e9;   /* besedilo na temni podlagi */
-    --barva-temna: #1a1714;             /* noga */
+    --barva-primarna: #2b2622;
+    --barva-primarna-svetla: #433b34;
+    --barva-poudarek: #c9a227;
+    --barva-poudarek-temna: #a8841a;
+    --barva-ozadje: #faf5e9;
+    --barva-povrsina: #ffffff;
+    --barva-besedilo: #302b27;
+    --barva-besedilo-svetlo: #faf5e9;
+    --barva-temna: #1a1714;
     --barva-obroba: #e6dcc5;
-    --barva-vrstica: #f4ecd8;           /* izmenične vrstice tabel */
-    --barva-zaprto: #9b2c2c;            /* dan, ko je zaprto (besedilo) */
-    --barva-zaprto-ozadje: #f3dcd6;     /* dan, ko je zaprto (ozadje) */
- 
+    --barva-vrstica: #f4ecd8;
+    --barva-zaprto: #9b2c2c;
+    --barva-zaprto-ozadje: #f3dcd6;
     --pisava-naslovi: "Playfair Display", Georgia, serif;
-    --pisava-besedilo: "Lato", Arial, sans-serif;
+    --pisava-besedilo: "Lato", Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -25,7 +24,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;           /* sidrne povezave ne smejo pod fiksno glavo */
+    scroll-padding-top: 6rem;
 }
 
 body {
@@ -42,18 +41,28 @@ header {
     top: 0;
     z-index: 100;
     display: flex;
-    justify-content: space-between;     
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
     background-color: var(--barva-primarna);
 }
 
-header ul{
+header .logo {
     display: flex;
-    gap: 0.25rem;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--pisava-naslovi);
+    font-size: 1.5rem;
+    color: var(--barva-besedilo-svetlo);
     text-decoration: none;
-    list-style: none;
+}
 
+header nav ul {
+    display: flex;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 header nav a {
@@ -62,6 +71,7 @@ header nav a {
     border-radius: 0.5rem;
     color: var(--barva-besedilo-svetlo);
     text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 header nav a:hover {
@@ -74,24 +84,119 @@ header nav a.aktivno {
     font-weight: 700;
 }
 
-main{
-    justify-content:center;
+main {
     width: 100%;
     max-width: 1100px;
-
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-footer{
+footer {
     padding: 2rem 1rem;
     text-align: center;
     color: var(--barva-besedilo-svetlo);
     background-color: var(--barva-temna);
 }
 
-footer address {
-    font-style: normal;
-}
- 
 footer a {
     color: var(--barva-poudarek);
+}
+
+section.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../slike/restavracija.jpg") center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--barva-besedilo-svetlo);
+    padding: 4rem 1rem;
+}
+
+section.hero h1 {
+    font-family: var(--pisava-naslovi);
+    font-size: 3rem;
+    margin: 0 0 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+section.hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--barva-poudarek);
+    color: var(--barva-besedilo);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+a.button:hover {
+    background-color: var(--barva-poudarek-temna);
+}
+
+.izpostavljenejedi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.izpostavljenejedi article {
+    background: var(--barva-povrsina);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.izpostavljenejedi figure {
+    margin: 0;
+    height: 200px;
+    overflow: hidden;
+}
+
+.izpostavljenejedi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.izpostavljenejedi h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+    font-family: var(--pisava-naslovi);
+}
+
+.izpostavljenejedi h3 {
+    margin: 0.75rem 1rem 0.5rem;
+    font-family: var(--pisava-naslovi);
+    font-size: 1.4rem;
+    color: var(--barva-besedilo);
+}
+
+.izpostavljenejedi p {
+    margin: 0 1rem 1rem;
+    flex-grow: 1;
+}
+
+.izpostavljenejedi .novi {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: var(--barva-poudarek);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.3rem;
 }
