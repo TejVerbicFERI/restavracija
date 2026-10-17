@@ -200,3 +200,57 @@ a.button:hover {
     font-size: 0.75rem;
     border-radius: 0.3rem;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2.5rem;
+    background-color: var(--barva-povrsina);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+caption {
+    display: none;
+}
+
+table th,
+table td {
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--barva-obroba);
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+table thead {
+    background-color: var(--barva-primarna);
+    color: var(--barva-besedilo-svetlo);
+}
+
+table thead th {
+    font-family: var(--pisava-naslovi);
+    font-size: 1.05rem;
+    letter-spacing: 0.05rem;
+    border-color: var(--barva-primarna-svetla);
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--barva-povrsina);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--barva-vrstica);
+}
+
+table tbody tr:hover {
+    background-color: var(--barva-obroba);
+    transition: background-color 0.2s ease;
+}
+
+table td:last-child,
+table th:last-child {
+    text-align: right;
+    font-weight: 700;
+    white-space: nowrap;
+}
