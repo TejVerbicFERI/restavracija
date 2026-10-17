@@ -254,3 +254,120 @@ table th:last-child {
     font-weight: 700;
     white-space: nowrap;
 }
+
+form fieldset {
+    background-color: var(--barva-povrsina);
+    border: 1px solid var(--barva-obroba);
+    border-radius: 0.75rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form legend {
+    font-size: 1.25rem;
+    font-family: var(--pisava-naslovi);
+    background-color: var(--barva-primarna);
+    color: var(--barva-besedilo-svetlo);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+form label {
+    display: inline-block;
+    width: 200px;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    vertical-align: middle;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form select,
+form textarea {
+    display: inline-block;
+    width: 900px;
+    max-width: 1000px;
+    padding: 0.5rem;
+    border: 1px solid var(--barva-obroba);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--barva-besedilo);
+    background-color: var(--barva-povrsina);
+    margin-bottom: 0.8rem;
+    vertical-align: middle;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+    width: auto;
+    font-weight: normal;
+    margin-left: 0.3rem;
+    margin-right: 1.2rem;
+}
+
+form #submit,
+form #reset {
+    cursor: pointer;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    width: auto;
+    min-width: 160px;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+form #submit {
+    background-color: var(--barva-poudarek);
+    color: var(--barva-besedilo);
+    border: 1px solid var(--barva-poudarek);
+}
+
+form #submit:hover {
+    background-color: var(--barva-poudarek-temna);
+}
+
+form #reset {
+    background-color: var(--barva-besedilo-svetlo);
+    border: 1px solid var(--barva-obroba);
+    color: var(--barva-besedilo);
+}
+
+form #reset:hover {
+    background-color: var(--barva-obroba);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--barva-poudarek);
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--barva-poudarek);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.25);
+}
+
+label[for="opombe"] {
+    vertical-align: top;
+    margin-top: 0.4rem;
+}
+
+textarea {
+    resize: vertical;
+}
