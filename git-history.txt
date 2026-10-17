@@ -1,0 +1,6 @@
+2026-10-11 | 1441c9f | ai dokumantacija
+2026-10-11 | 5dc28a4 | Končana stran o-nas
+2026-10-11 | 2c80b91 | Končani recepti
+2026-10-11 | 84c802c | Končana rezervacija
+2026-10-10 | a5058d9 | Stran za jedlnike
+2026-10-10 | 2b3c972 | Končan index
