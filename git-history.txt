@@ -1,3 +1,9 @@
+2026-10-18 | f28f2f7 | o nas css + popravki
+2026-10-18 | 393917c | recepti css
+2026-10-17 | 2798edb | rezervacija css
+2026-10-17 | 5a850e2 | css jedilnik
+2026-10-17 | 49861b0 | index stran css
+2026-10-17 | b88dd77 | header+footer css
 2026-10-11 | 1441c9f | ai dokumantacija
 2026-10-11 | 5dc28a4 | Končana stran o-nas
 2026-10-11 | 2c80b91 | Končani recepti
