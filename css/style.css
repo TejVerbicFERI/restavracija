@@ -371,3 +371,138 @@ label[for="opombe"] {
 textarea {
     resize: vertical;
 }
+
+#kazalo-receptov ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2rem 0;
+}
+
+#kazalo-receptov a {
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    background-color: var(--barva-povrsina);
+    color: var(--barva-besedilo);
+    text-decoration: none;
+    border: 1px solid var(--barva-besedilo);
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#kazalo-receptov a:hover {
+    background-color: var(--barva-poudarek);
+    border-color: var(--barva-poudarek);
+    color: var(--barva-besedilo);
+    cursor: pointer;
+}
+
+main#vrh article {
+    background-color: var(--barva-povrsina);
+    border: 1px solid var(--barva-obroba);
+    border-radius: 0.5rem;
+    padding: 1.75rem 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+main#vrh article h2 {
+    font-family: var(--pisava-naslovi);
+    font-size: 1.6rem;
+    color: var(--barva-primarna);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid var(--barva-poudarek);
+    padding-bottom: 0.4rem;
+}
+
+.recept-vrsta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.recept-slika figure {
+    margin: 0;
+}
+
+.recept-slika img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    display: block;
+    border: 1px solid var(--barva-obroba);
+}
+
+.recept-slika figcaption {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+.recept-sestavine .cas {
+    font-size: 0.95rem;
+    color: var(--barva-besedilo);
+    margin: 0 0 0.85rem 0;
+}
+
+main#vrh article h3 {
+    font-family: var(--pisava-naslovi);
+    font-size: 1.25rem;
+    color: var(--barva-primarna);
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    border-bottom: 2px solid var(--barva-poudarek);
+    padding-bottom: 0.3rem;
+}
+
+.recept-sestavine ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    line-height: 1.65;
+    font-size: 0.95rem;
+}
+
+.recept-sestavine li {
+    margin-bottom: 0.25rem;
+}
+
+.recept-postopek {
+    margin-top: 1rem;
+}
+
+.recept-postopek ol {
+    margin: 0;
+    padding-left: 1.2rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.recept-postopek li {
+    margin-bottom: 0.4rem;
+}
+
+.na-vrh {
+    text-align: right;
+    margin: 1rem 0 0 0;
+}
+
+.na-vrh a {
+    color: var(--barva-besedilo);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.na-vrh a:hover {
+    color: var(--barva-poudarek);
+}
