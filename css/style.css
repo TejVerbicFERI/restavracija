@@ -25,7 +25,6 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
-    overflow-x: hidden;
 }
 
 body {
@@ -35,7 +34,6 @@ body {
     line-height: 1.6;
     color: var(--barva-besedilo);
     background-color: var(--barva-ozadje);
-    overflow-x: hidden;
 }
 
 img,
@@ -837,9 +835,28 @@ h3 {
     main#vrh article {
         padding: 1.25rem 1rem;
     }
+
+        html {
+        scroll-padding-top: 5rem;
+    }
+
+    .recept-vrsta,
+    .zgodba-vrsta {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    main#vrh article {
+        padding: 1.25rem 1rem;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto !important;
+    }
+
     *,
     *::before,
     *::after {
