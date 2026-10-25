@@ -92,7 +92,7 @@ header nav a:hover {
 
 header nav a.aktivno {
     background-color: var(--barva-poudarek);
-    color: var(--barva-besedilo);
+    color: var(--barva-temna);
     font-weight: 700;
 }
 
@@ -155,15 +155,17 @@ section.hero p {
 }
 
 a.button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     background-color: var(--barva-poudarek);
-    color: var(--barva-besedilo);
+    color: var(--barva-temna);
     border-radius: 0.5rem;
     text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a.button:hover {
@@ -380,7 +382,7 @@ form #reset {
 
 form #submit {
     background-color: var(--barva-poudarek);
-    color: var(--barva-besedilo);
+    color: var(--barva-temna);
     border: 1px solid var(--barva-poudarek);
 }
 
@@ -389,13 +391,13 @@ form #submit:hover {
 }
 
 form #reset {
-    background-color: var(--barva-besedilo-svetlo);
+    background-color: var(--barva-povrsina);
     border: 1px solid var(--barva-obroba);
     color: var(--barva-besedilo);
 }
 
 form #reset:hover {
-    background-color: var(--barva-obroba);
+    background-color: var(--barva-vrstica);
 }
 
 input[type="radio"],
@@ -590,10 +592,23 @@ main#vrh article h3 {
     text-align: center;
 }
 
+#delovni-cas .tabela-ovoj table,
 #delovni-cas table {
+    min-width: unset;
+    width: 100%;
     max-width: 500px;
     margin: 1.5rem 0 0.75rem 0;
 }
+
+main a {
+    color: var(--barva-poudarek);
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: var(--barva-poudarek-temna);
+}
+
 
 #delovni-cas table tbody th {
     text-align: left;
@@ -864,5 +879,44 @@ h3 {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --barva-primarna: #1e1a17;
+        --barva-primarna-svetla: #352f2a;
+        --barva-poudarek: #d4af37;
+        --barva-poudarek-temna: #b59226;
+        --barva-ozadje: #141210;
+        --barva-povrsina: #211d19;
+        --barva-besedilo: #e8e0d5;
+        --barva-besedilo-svetlo: #f7f2ea;
+        --barva-temna: #0c0b0a;
+        --barva-obroba: #3d352e;
+        --barva-vrstica: #29241f;
+        --barva-zaprto: #ff7b72;
+        --barva-zaprto-ozadje: #451b1b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition: none !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .izpostavljenejedi article:hover {
+        transform: none !important;
     }
 }
