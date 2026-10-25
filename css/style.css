@@ -188,7 +188,7 @@ a.button:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ea
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .izpostavljenejedi article:hover {
