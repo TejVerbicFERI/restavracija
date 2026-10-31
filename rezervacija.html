@@ -40,7 +40,7 @@
         </section>
 
         <section>
-            <form action="rezervacija.html" method="get">
+            <form action="rezervacija.html" method="get" novalidate>
 
                 <fieldset>
                     <legend>Kontaktni podatki</legend>
@@ -57,7 +57,7 @@
                     <label for="datum">Datum</label>
                     <input type="date" id="datum" name="datum" required><br>
                     <label for="ura">Ura</label>
-                    <input type="time" id="ura" name="ura" min="11:00" max="21:00" required><br>
+                    <input type="time" id="ura" name="ura" required><br>
                     <label for="osebe">Število oseb</label>
                     <input type="number" id="osebe" name="osebe" min="1" max="12" value="2" required><br>
                     <label for="prostor">Prostor</label>
@@ -113,6 +113,7 @@
         </address>
         <p>&copy; 2026 Tej Verbič</p>
     </footer>
+    <script src="js/rezervacija.js"></script>
 </body>
 
 </html>

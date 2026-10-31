@@ -701,6 +701,26 @@ h3 {
     outline-offset: 2px;
 }
 
+.napaka {
+    border: 2px solid #d32f2f;
+    outline-color: #d32f2f;
+}
+
+.sporocilo-napaka {
+    display: block;
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0.75rem;
+}
+
+label.napaka {
+    color: #d32f2f;
+}
+
+
+
+
+/* Animacije */
 
 @keyframes uvodniNaslov {
     0% {
