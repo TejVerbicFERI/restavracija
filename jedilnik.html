@@ -7,6 +7,7 @@
     <title>Jedilnik | Zlati Lotos</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/jedilnik.js"></script>
 </head>
 
 <body>
@@ -39,142 +40,14 @@
                 informacije pa vprašajte naše osebje.</p>
         </section>
 
-        <section>
-            <h2>Predjedi</h2>
-            <div class="tabela-ovoj">
-                <table>
-                    <caption>Predjedi</caption>
-                    <thead>
-                        <tr>
-                            <th>Jed</th>
-                            <th>Opis</th>
-                            <th>Alergeni</th>
-                            <th>Cena</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Pomladni zavitki</td>
-                            <td>Hrustljavi zavitki z zelenjavo in steklenimi rezanci, s sladko-pekočo omako.</td>
-                            <td>Gluten, soja, sezam</td>
-                            <td>6,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>Gyoza</td>
-                            <td>Japonski cmoki s svinjskim nadevom, popečeni na ponvi, s sojino omako.</td>
-                            <td>Gluten, soja, sezam</td>
-                            <td>7,90 €</td>
-                        </tr>
-                        <tr>
-                            <td>Miso juha</td>
-                            <td>Lahka juha iz fermentirane sojine paste s tofujem, morskimi algami in mladim čebulčkom.</td>
-                            <td>Soja</td>
-                            <td>4,90 €</td>
-                        </tr>
-                        <tr>
-                            <td>Edamame</td>
-                            <td>Mladi sojini stroki, kuhani na pari in posuti z morsko soljo.</td>
-                            <td>Soja</td>
-                            <td>4,50 €</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-        </section>
+        <div class="filtri-kategorij" role="group" aria-label="Filtriranje jedilnika po kategorijah">
+            <button type="button" class="gumb-filter aktivno" data-kategorija="Vse">Vse</button>
+            <button type="button" class="gumb-filter" data-kategorija="Predjedi">Predjedi</button>
+            <button type="button" class="gumb-filter" data-kategorija="Glavne jedi">Glavne jedi</button>
+            <button type="button" class="gumb-filter" data-kategorija="Sladice">Sladice</button>
+        </div>
 
-        <section>
-            <h2>Glavne jedi</h2>
-            <div class="tabela-ovoj">
-                <table>
-                    <caption>Glavne jedi</caption>
-                    <thead>
-                        <tr>
-                            <th>Jed</th>
-                            <th>Opis</th>
-                            <th>Alergeni</th>
-                            <th>Cena</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Pho bo</td>
-                            <td>Vietnamska goveja juha z riževimi rezanci, tankimi rezinami govedine in svežimi zelišči.
-                            </td>
-                            <td>Soja, ribe</td>
-                            <td>12,90 €</td>
-                        </tr>
-                        <tr>
-                            <td>Pad thai s kozicami</td>
-                            <td>Ocvrti riževi rezanci s kozicami, jajcem, kalčki in praženimi arašidi.</td>
-                            <td>Raki, jajca, arašidi, soja, ribe</td>
-                            <td>13,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>Zeleni tajski curry</td>
-                            <td>Piščanec v kremni kokosovi omaki z bazilikom, bambusom in jasminovim rižem.</td>
-                            <td>Ribe, raki</td>
-                            <td>13,90 €</td>
-                        </tr>
-                        <tr>
-                            <td>Teriyaki losos</td>
-                            <td>Na žaru pečen losos v glazuri teriyaki, s sezamom in zelenjavo na pari.</td>
-                            <td>Ribe, gluten, soja, sezam</td>
-                            <td>16,90 €</td>
-                        </tr>
-                        <tr>
-                            <td>Tofu s sezamom in zelenjavo</td>
-                            <td>Hrustljavi tofu z woka zelenjavo in sezamovo omako. Vegansko.</td>
-                            <td>Soja, sezam</td>
-                            <td>11,90 €</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section>
-            <h2>Sladice</h2>
-            <div class="tabela-ovoj">
-                <table>
-                    <caption>Sladice</caption>
-                    <thead>
-                        <tr>
-                            <th>Jed</th>
-                            <th>Opis</th>
-                            <th>Alergeni</th>
-                            <th>Cena</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mochi sladoled</td>
-                            <td>Mehki riževi žepki, polnjeni s sladoledom iz zelenega čaja matcha.</td>
-                            <td>Mleko</td>
-                            <td>6,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>Mango z lepljivim rižem</td>
-                            <td>Sladek kokosov riž s svežim mangom. Brez glutena in vegansko.</td>
-                            <td>Brez alergenov</td>
-                            <td>6,90 €</td>
-                        </tr>
-                        <tr>
-                            <td>Dorayaki</td>
-                            <td>Japonske palačinke, polnjene s sladko pasto iz rdečega fižola.</td>
-                            <td>Gluten, jajca, mleko</td>
-                            <td>5,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>Banane v testu</td>
-                            <td>Ocvrte banane v lahkem testu z medom in sezamom.</td>
-                            <td>Gluten, jajca, sezam</td>
-                            <td>5,90 €</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <div id="jedilnik"></div>
     </main>
     <br>
 
