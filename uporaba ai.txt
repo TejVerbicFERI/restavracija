@@ -125,3 +125,124 @@ Sestavine: 100 g lepljive riževe moke, 50 g sladkorja v prahu, 150 ml vode, 2 g
 
 Postopek priprave: Sladoled oblikujte v majhne kroglice, jih položite na pladenj in zamrznite za 2 uri. V skledi zmešajte riževo moko, sladkor v prahu, matcha čaj in vodo, da dobite gladko testo. Skledo pokrijte in maso segrevajte v mikrovalovni pečici 2 minuti. Nato jo premešajte in segrevajte še 1 minuto, da postane lepljiva. Delovno površino posujte s koruznim škrobom, nanjo stresite testo, ga razvaljajte in razrežite na 8 krogov. V vsak krog zavijte eno kroglico zamrznjenega sladoleda. Pripravljene mochi sladice do serviranja shranite v zamrzovalniku.
 
+3. GENERIRANJE objektov
+
+poizvedba:
+
+Jed	Opis	Alergeni	Cena
+Pomladni zavitki	Hrustljavi zavitki z zelenjavo in steklenimi rezanci, s sladko-pekočo omako.	Gluten, soja, sezam	6,50 €
+Gyoza	Japonski cmoki s svinjskim nadevom, popečeni na ponvi, s sojino omako.	Gluten, soja, sezam	7,90 €
+Miso juha	Lahka juha iz fermentirane sojine paste s tofujem, morskimi algami in mladim čebulčkom.	Soja	4,90 €
+Edamame	Mladi sojini stroki, kuhani na pari in posuti z morsko soljo.	Soja	4,50 €
+Glavne jedi
+Jed	Opis	Alergeni	Cena
+Pho bo	Vietnamska goveja juha z riževimi rezanci, tankimi rezinami govedine in svežimi zelišči.	Soja, ribe	12,90 €
+Pad thai s kozicami	Ocvrti riževi rezanci s kozicami, jajcem, kalčki in praženimi arašidi.	Raki, jajca, arašidi, soja, ribe	13,50 €
+Zeleni tajski curry	Piščanec v kremni kokosovi omaki z bazilikom, bambusom in jasminovim rižem.	Ribe, raki	13,90 €
+Teriyaki losos	Na žaru pečen losos v glazuri teriyaki, s sezamom in zelenjavo na pari.	Ribe, gluten, soja, sezam	16,90 €
+Tofu s sezamom in zelenjavo	Hrustljavi tofu z woka zelenjavo in sezamovo omako. Vegansko.	Soja, sezam	11,90 €
+Sladice
+Jed	Opis	Alergeni	Cena
+Mochi sladoled	Mehki riževi žepki, polnjeni s sladoledom iz zelenega čaja matcha.	Mleko	6,50 €
+Mango z lepljivim rižem	Sladek kokosov riž s svežim mangom. Brez glutena in vegansko.	Brez alergenov	6,90 €
+Dorayaki	Japonske palačinke, polnjene s sladko pasto iz rdečega fižola.	Gluten, jajca, mleko	5,50 €
+Banane v testu	Ocvrte banane v lahkem testu z medom in sezamom.	Gluten, jajca, sezam	5,90 €
+
+iz tega mi naredi array kjer bo vsaka jed objekt in bo imela atribute naziv, opis, kategorija, alergeni in cena
+
+odgovor:
+
+[
+    {
+        naziv: 'Pomladni zavitki',
+        opis: 'Hrustljavi zavitki z zelenjavo in steklenimi rezanci, s sladko-pekočo omako.',
+        kategorija: 'Predjedi',
+        alergeni: 'Gluten, soja, sezam',
+        cena: 6.50
+    },
+    {
+        naziv: 'Gyoza',
+        opis: 'Japonski cmoki s svinjskim nadevom, popečeni na ponvi, s sojino omako.',
+        kategorija: 'Predjedi',
+        alergeni: 'Gluten, soja, sezam',
+        cena: 7.90
+    },
+    {
+        naziv: 'Miso juha',
+        opis: 'Lahka juha iz fermentirane sojine paste s tofujem, morskimi algami in mladim čebulčkom.',
+        kategorija: 'Predjedi',
+        alergeni: 'Soja',
+        cena: 4.90
+    },
+    {
+        naziv: 'Edamame',
+        opis: 'Mladi sojini stroki, kuhani na pari in posuti z morsko soljo.',
+        kategorija: 'Predjedi',
+        alergeni: 'Soja',
+        cena: 4.50
+    },
+    {
+        naziv: 'Pho bo',
+        opis: 'Vietnamska goveja juha z riževimi rezanci, tankimi rezinami govedine in svežimi zelišči.',
+        kategorija: 'Glavne jedi',
+        alergeni: 'Soja, ribe',
+        cena: 12.90
+    },
+    {
+        naziv: 'Pad thai s kozicami',
+        opis: 'Ocvrti riževi rezanci s kozicami, jajcem, kalčki in praženimi arašidi.',
+        kategorija: 'Glavne jedi',
+        alergeni: 'Raki, jajca, arašidi, soja, ribe',
+        cena: 13.50
+    },
+    {
+        naziv: 'Zeleni tajski curry',
+        opis: 'Piščanec v kremni kokosovi omaki z bazilikom, bambusom in jasminovim rižem.',
+        kategorija: 'Glavne jedi',
+        alergeni: 'Ribe, raki',
+        cena: 13.90
+    },
+    {
+        naziv: 'Teriyaki losos',
+        opis: 'Na žaru pečen losos v glazuri teriyaki, s sezamom in zelenjavo na pari.',
+        kategorija: 'Glavne jedi',
+        alergeni: 'Ribe, gluten, soja, sezam',
+        cena: 16.90
+    },
+    {
+        naziv: 'Tofu s sezamom in zelenjavo',
+        opis: 'Hrustljavi tofu z woka zelenjavo in sezamovo omako. Vegansko.',
+        kategorija: 'Glavne jedi',
+        alergeni: 'Soja, sezam',
+        cena: 11.90
+    },
+    {
+        naziv: 'Mochi sladoled',
+        opis: 'Mehki riževi žepki, polnjeni s sladoledom iz zelenega čaja matcha.',
+        kategorija: 'Sladice',
+        alergeni: 'Mleko',
+        cena: 6.50
+    },
+    {
+        naziv: 'Mango z lepljivim rižem',
+        opis: 'Sladek kokosov riž s svežim mangom. Brez glutena in vegansko.',
+        kategorija: 'Sladice',
+        alergeni: 'Brez alergenov',
+        cena: 6.90
+    },
+    {
+        naziv: 'Dorayaki',
+        opis: 'Japonske palačinke, polnjene s sladko pasto iz rdečega fižola.',
+        kategorija: 'Sladice',
+        alergeni: 'Gluten, jajca, mleko',
+        cena: 5.50
+    },
+    {
+        naziv: 'Banane v testu',
+        opis: 'Ocvrte banane v lahkem testu z medom in sezamom.',
+        kategorija: 'Sladice',
+        alergeni: 'Gluten, jajca, sezam',
+        cena: 5.90
+    }
+];
+
