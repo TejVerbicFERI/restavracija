@@ -717,8 +717,38 @@ label.napaka {
     color: #d32f2f;
 }
 
+.cas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+}
 
+.cas i {
+    color: var(--barva-poudarek);
+}
 
+.cas label {
+    margin: 0;
+}
+
+.porcije {
+    width: 3.5rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--barva-besedilo-svetlo);
+    background-color: var(--barva-poudarek);
+    border: 2px solid var(--barva-poudarek);
+    border-radius: 6px;
+}
+
+.porcije:focus {
+    outline: none;
+    border-color: var(--barva-poudarek-temna);
+    box-shadow: 0 0 0 2px var(--barva-poudarek-temna);
+}
 
 /* Animacije */
 

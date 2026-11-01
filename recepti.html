@@ -47,7 +47,7 @@
             </nav>
         </section>
 
-        <article id="pho">
+        <article id="pho" data-porcije="4">
             <h2>Pho</h2>
             <div class="recept-vrsta">
                 <div class="recept-slika">
@@ -58,21 +58,24 @@
                 </div>
 
                 <div class="recept-sestavine">
-                    <p class="cas">Čas priprave: 3 ure · Število porcij: 4</p>
+                    <p class="cas"><i class="fa-regular fa-clock"></i> Čas priprave: 3 ure · <i class="fa-solid fa-user-group"></i> 
+                        <label for="porcije-pho">Število porcij:</label> 
+                        <input type="number" id="porcije-pho" class="porcije" min="1" max="12" value="4">
+                    </p>
                     <h3>Sestavine</h3>
                     <ul>
-                        <li>1 kg govejih kosti</li>
-                        <li>500 g govejega zrezka</li>
-                        <li>2 l vode</li>
-                        <li>1 čebula</li>
-                        <li>1 kos ingverja (50 g)</li>
-                        <li>2 zvezdasta janeža</li>
-                        <li>1 palčka cimeta</li>
-                        <li>3 žlice ribje omake</li>
-                        <li>400 g riževih rezancev</li>
-                        <li>100 g fižolovih kalčkov</li>
-                        <li>1 limeta</li>
-                        <li>1 šopek svežih zelišč (bazilika, koriander)</li>
+                        <li><span data-kolicina="1">1</span> kg govejih kosti</li>
+                        <li><span data-kolicina="500">500</span> g govejega zrezka</li>
+                        <li><span data-kolicina="2">2</span> l vode</li>
+                        <li><span data-kolicina="1">1</span> čebula</li>
+                        <li><span data-kolicina="50">50</span> g ingverja</li>
+                        <li><span data-kolicina="2">2</span> zvezdasta janeža</li>
+                        <li><span data-kolicina="1">1</span> palčka cimeta</li>
+                        <li><span data-kolicina="3">3</span> žlice ribje omake</li>
+                        <li><span data-kolicina="400">400</span> g riževih rezancev</li>
+                        <li><span data-kolicina="100">100</span> g fižolovih kalčkov</li>
+                        <li><span data-kolicina="1">1</span> limeta</li>
+                        <li><span data-kolicina="1">1</span> šopek svežih zelišč (bazilika, koriander)</li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +97,7 @@
             <p class="na-vrh"><a href="#vrh">Na vrh</a></p>
         </article>
 
-        <article id="padthai">
+        <article id="padthai" data-porcije="2">
             <h2>Pad thai s kozicami</h2>
             <div class="recept-vrsta">
                 <div class="recept-slika">
@@ -105,21 +108,24 @@
                 </div>
 
                 <div class="recept-sestavine">
-                    <p class="cas">Čas priprave: 30 minut · Število porcij: 2</p>
+                    <p class="cas"><i class="fa-regular fa-clock"></i> Čas priprave: 30 minut · <i class="fa-solid fa-user-group"></i> 
+                        <label for="porcije-padthai">Število porcij:</label> 
+                        <input type="number" id="porcije-padthai" class="porcije" min="1" max="12" value="2">
+                    </p>
                     <h3>Sestavine</h3>
                     <ul>
-                        <li>200 g riževih rezancev</li>
-                        <li>200 g olupljenih kozic</li>
-                        <li>2 jajci</li>
-                        <li>100 g fižolovih kalčkov</li>
-                        <li>2 stroka česna</li>
-                        <li>3 žlice ribje omake</li>
-                        <li>2 žlici tamarindove paste</li>
-                        <li>1 žlica rjavega sladkorja</li>
-                        <li>2 žlici olja</li>
-                        <li>50 g praženih arašidov</li>
-                        <li>1 limeta</li>
-                        <li>2 stebli mladega česna ali drobnjaka</li>
+                        <li><span data-kolicina="200">200</span> g riževih rezancev</li>
+                        <li><span data-kolicina="200">200</span> g olupljenih kozic</li>
+                        <li><span data-kolicina="2">2</span> jajci</li>
+                        <li><span data-kolicina="100">100</span> g fižolovih kalčkov</li>
+                        <li><span data-kolicina="2">2</span> stroka česna</li>
+                        <li><span data-kolicina="3">3</span> žlice ribje omake</li>
+                        <li><span data-kolicina="2">2</span> žlici tamarindove paste</li>
+                        <li><span data-kolicina="1">1</span> žlica rjavega sladkorja</li>
+                        <li><span data-kolicina="2">2</span> žlici olja</li>
+                        <li><span data-kolicina="50">50</span> g praženih arašidov</li>
+                        <li><span data-kolicina="1">1</span> limeta</li>
+                        <li><span data-kolicina="2">2</span> stebli mladega česna ali drobnjaka</li>
                     </ul>
                 </div>
             </div>
@@ -141,7 +147,7 @@
             <p class="na-vrh"><a href="#vrh">Na vrh</a></p>
         </article>
 
-        <article id="mochi">
+        <article id="mochi" data-porcije="8">
             <h2>Mochi sladoled</h2>
             <div class="recept-vrsta">
                 <div class="recept-slika">
@@ -152,15 +158,18 @@
                 </div>
 
                 <div class="recept-sestavine">
-                    <p class="cas">Čas priprave: 1 ura (+ 2 uri zamrzovanja) · Število porcij: 8</p>
+                    <p class="cas"><i class="fa-regular fa-clock"></i> Čas priprave: 3 ure· <i class="fa-solid fa-user-group"></i> 
+                        <label for="porcije-mochi">Število porcij:</label>
+                        <input type="number" id="porcije-mochi" class="porcije" min="1" max="12" value="8">
+                    </p>
                     <h3>Sestavine</h3>
                     <ul>
-                        <li>100 g lepljive riževe moke</li>
-                        <li>50 g sladkorja v prahu</li>
-                        <li>150 ml vode</li>
-                        <li>2 g matcha čaja v prahu</li>
-                        <li>30 g koruznega škroba</li>
-                        <li>400 ml sladoleda iz zelenega čaja</li>
+                        <li><span data-kolicina="100">100</span> g lepljive riževe moke</li>
+                        <li><span data-kolicina="50">50</span> g sladkorja v prahu</li>
+                        <li><span data-kolicina="150">150</span> ml vode</li>
+                        <li><span data-kolicina="2">2</span> g matcha čaja v prahu</li>
+                        <li><span data-kolicina="30">30</span> g koruznega škroba</li>
+                        <li><span data-kolicina="400">400</span> ml sladoleda iz zelenega čaja</li>
                     </ul>
                 </div>
             </div>
@@ -192,6 +201,7 @@
         </address>
         <p>&copy; 2026 Tej Verbič</p>
     </footer>
+    <script src="js/recepti.js"></script>
 </body>
 
 </html>
