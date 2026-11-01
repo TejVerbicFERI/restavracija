@@ -1,5 +1,6 @@
 "use strict";
 
+// Poišče vse recepte, ki imajo določen podatek o številu osnovnih porcij.
 document.querySelectorAll("article[data-porcije]").forEach(function (recept) {
     const osnovnePorcije = Number(recept.dataset.porcije);
     const vnos = recept.querySelector(".porcije");

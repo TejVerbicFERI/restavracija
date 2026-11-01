@@ -24,6 +24,7 @@ const polja = {
     soglasje: document.getElementById("soglasje")
 };
 
+// Preveri, ali sta vpisana ime in priimek ter ali vsaka beseda vsebuje vsaj dve črki.
 function preveriIme(vrednost) {
     const besede = vrednost.trim().split(/\s+/).filter(b => b !== "");
     if (besede.length < 2 || !besede.every(b => REGEX_BESEDA.test(b))) {
@@ -32,14 +33,17 @@ function preveriIme(vrednost) {
     return "";
 }
 
+// Preveri, ali je e-poštni naslov zapisan v pravilni obliki.
 function preveriEmail(vrednost) {
     return REGEX_EMAIL.test(vrednost.trim()) ? "" : "Vnesite veljaven e-poštni naslov, npr. janez.novak@primer.si.";
 }
 
+// Preveri, ali je telefonska številka zapisana v pravilni obliki.
 function preveriTelefon(vrednost) {
     return REGEX_TELEFON.test(vrednost.trim()) ? "" : "Vnesite telefonsko številko v obliki 040 123 456 ali 040123456.";
 }
 
+// Preveri, ali je datum veljaven, ni v preteklosti in ni ponedeljek.
 function preveriDatum(vrednost) {
     if (vrednost === "") {
         return "Izberite datum.";
@@ -60,6 +64,7 @@ function preveriDatum(vrednost) {
     return "";
 }
 
+// Preveri, ali je izbrana ura znotraj delovnega časa restavracije.
 function preveriUro(vrednost) {
     if (vrednost === "") {
         return "Izberite uro.";
@@ -78,6 +83,7 @@ function preveriUro(vrednost) {
     return "";
 }
 
+// Preveri, ali je število oseb celo število med 1 in 12.
 function preveriOsebe(vrednost) {
     const v = vrednost.trim();
     if (!/^\d+$/.test(v) || Number(v) < 1 || Number(v) > 12) {
@@ -86,6 +92,7 @@ function preveriOsebe(vrednost) {
     return "";
 }
 
+// Preveri, ali je uporabnik označil soglasje za obdelavo osebnih podatkov.
 function preveriSoglasje() {
     return polja.soglasje.checked ? "" : "Za pošiljanje se morate strinjati z obdelavo osebnih podatkov.";
 }
@@ -100,6 +107,7 @@ const preverjanja = {
     soglasje: () => preveriSoglasje()
 };
 
+// Odstrani oznako napake in sporočilo o napaki iz izbranega polja.
 function pobrisiNapako(polje) {
     polje.classList.remove("napaka");
     const sporocilo = document.getElementById("napaka-" + polje.id);
@@ -112,6 +120,7 @@ function pobrisiNapako(polje) {
     }
 }
 
+// Označi polje z napako in prikaže ustrezno opozorilo.
 function prikaziNapako(polje, besedilo) {
     pobrisiNapako(polje);
     polje.classList.add("napaka");
@@ -132,6 +141,7 @@ function prikaziNapako(polje, besedilo) {
     mesto.insertAdjacentElement("afterend", sporocilo);
 }
 
+// Preveri pravilnost izbranega polja in prikaže ali odstrani napako.
 function validirajPolje(ime) {
     const napaka = preverjanja[ime]();
     if (napaka) {
@@ -151,11 +161,13 @@ Object.keys(polja).forEach(function (ime) {
     });
 });
 
+// Pretvori datum v bolj berljivo obliko (npr. 1. 11. 2026).
 function formatirajDatum(vrednost) {
     const [l, m, d] = vrednost.split("-");
     return Number(d) + ". " + Number(m) + ". " + l;
 }
 
+// Odstrani obstoječi povzetek rezervacije.
 function pobrisiPovzetek() {
     const star = document.getElementById("povzetek");
     if (star) star.remove();
