@@ -1,3 +1,9 @@
+2026-11-01 | 1c399c7 | upraba ai za js
+2026-11-01 | 78207f7 | css + html popravki
+2026-11-01 | c62f3cc | recepti js
+2026-10-31 | e048404 | rezervacija js
+2026-10-31 | 170b497 | JS za jedi + css popravki
+2026-10-25 | f782141 | git history
 2026-10-25 | ae32614 | dark mode
 2026-10-25 | 38ac3ff | recepti css
 2026-10-25 | 13b309a | footer ikone
