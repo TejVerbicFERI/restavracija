@@ -1,3 +1,5 @@
+2026-11-01 | f56a87a | opis funkcij
+2026-11-01 | 7df17c9 | git log
 2026-11-01 | 1c399c7 | upraba ai za js
 2026-11-01 | 78207f7 | css + html popravki
 2026-11-01 | c62f3cc | recepti js
