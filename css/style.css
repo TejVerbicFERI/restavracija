@@ -170,6 +170,7 @@ a.button {
 
 a.button:hover {
     background-color: var(--barva-poudarek-temna);
+    color: var(--barva-besedilo-svetlo);
 }
 
 .izpostavljenejedi {
@@ -231,7 +232,7 @@ a.button:hover {
     top: 0.5rem;
     right: 0.5rem;
     background: var(--barva-poudarek);
-    color: #fff;
+    color: var(--barva-ozadje);
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
     border-radius: 0.3rem;
@@ -495,7 +496,7 @@ main#vrh article h2 {
 
 .recept-slika figcaption {
     font-size: 0.85rem;
-    color: #777;
+    color: var(--primarna-svetla);
     margin-top: 0.4rem;
     font-style: italic;
 }
@@ -586,7 +587,7 @@ main#vrh article h3 {
 
 #o-nas-hero figcaption {
     font-size: 0.85rem;
-    color: #777;
+    color: var(--primarna-svetla);
     margin-top: 0.4rem;
     font-style: italic;
     text-align: center;
@@ -702,19 +703,19 @@ h3 {
 }
 
 .napaka {
-    border: 2px solid #d32f2f;
-    outline-color: #d32f2f;
+    border: 2px solid var(--barva-zaprto);
+    outline-color: var(--barva-zaprto);
 }
 
 .sporocilo-napaka {
     display: block;
-    color: #d32f2f;
+    color: var(--barva-zaprto);
     font-size: 0.9rem;
     margin: 0.25rem 0 0.75rem;
 }
 
 label.napaka {
-    color: #d32f2f;
+    color: var(--barva-zaprto);
 }
 
 .cas {
